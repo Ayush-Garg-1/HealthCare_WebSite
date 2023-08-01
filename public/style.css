@@ -1,0 +1,1047 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Oswald', sans-serif;
+}
+/*  Create css variable */
+:root{
+    --color-name: rgb(18, 7, 41);
+    --txt-color:rgb(255, 255, 255);
+    --btns-color:linear-gradient(to left,rgb(12, 12, 149,0.7),rgb(165, 42, 42,0.7));
+}
+/**************************************** navbar cood are strated ****************************************************/
+nav{
+    width: 100%;
+    height: 10vh;
+    background-color: var(--color-name);
+    color: var(--txt-color);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.logo{
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    gap: 2px;
+    font-weight: bold;
+}
+.logo > span{
+    font-size: 30px;
+    margin-bottom: 5px;
+    
+}
+.menu{
+    word-spacing: 20px;
+}
+.menu a{
+    text-decoration: none;
+    color: var(--txt-color);
+    font-size: 17px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+.menu a:nth-child(1){
+    color: rgb(11, 240, 217);
+}
+.menu a:hover{
+    color: rgb(11, 240, 217);
+}
+.user-details{
+    word-spacing: 20px;
+}
+.user-details a{
+    text-decoration: none;
+    padding: 14px 40px;
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+    font-size: 17px;
+    font-weight: bold;
+    text-transform:uppercase;
+    color: white;
+    background-color:  #16a085;;
+}
+.user-details a:hover{
+    background-color: blue;
+    color: white;
+}
+.ham{
+    display: none;
+}
+.ham span{
+    font-size: 40px;
+    cursor: pointer;
+}
+/****************************************** End of Navbar ********************************************/
+
+
+
+
+/************* Hero section ***************************/
+main{
+    width: 100%;
+    height: 90vh;
+}
+.main-container{
+    width: 85%;
+    height: 100%;
+    display: flex;
+    justify-content:center;
+    align-items:center;
+    gap: 10px;
+    margin: 1px auto;
+}
+.info{
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+.info h1{
+    text-transform: capitalize;
+    width: 50%;
+    font-size: 40px;
+    font-weight: bold;
+}
+.info span{
+    color:rgb(16, 235, 158);;
+}
+.info p{
+    font-weight: 500;
+    font-size: 17px;
+    width: 70%;
+    line-height: 25px;
+}
+.main-link{
+margin-top: 16px;
+}
+.info a{
+    text-decoration: none;
+    text-align: center;
+    padding: 14px 40px;
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+    font-size: 18px;
+    font-weight: bold;
+    text-transform:capitalize;
+    color: rgb(35, 32, 32);
+    background-color: rgb(16, 235, 158);
+}
+.info a:hover{
+    background-color: blue;
+    color: white;
+}
+
+.main-img img{
+    width: 550px;
+    height: 75vh;
+    box-shadow: -15px -15px 1px rgb(184, 184, 235,0.2);
+}
+
+/********************* End of hero section *********************************/
+
+
+
+/****************** Start About Section ********************/
+.about-section{
+    width: 100%;
+    height: 100vh;
+}
+.heading{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 11px;
+}
+.line{
+    width: 25%;
+    height: 5px;
+    background-image: linear-gradient(to left,rgb(149, 240, 225),rgb(238, 177, 106),rgb(247, 154, 228));
+    position: relative;
+}
+.line::after{
+    content: '';
+    position: absolute;
+    top:-10px;
+    left:-20px;
+    bottom: 0;
+    width: 25px;
+    height: 25px;
+     background-image: linear-gradient(to right,rgb(149, 240, 225),rgb(238, 177, 106),rgb(247, 154, 228));
+   
+}
+.main-heading{
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 30px;
+    text-align: center;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.about-container{
+    width: 85%;
+    height: 100%;
+    display: flex;
+    justify-content:space-around;
+    align-items:center;
+    margin: 0 auto;
+    /* background-color: antiquewhite; */
+}
+.about-info{
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    margin-left:100px;
+}
+.about-info h1{
+    text-transform: capitalize;
+    font-size: 40px;
+    font-weight: bold;
+}
+.about-info span{
+    color:rgb(16, 235, 158);;
+}
+.about-info p{
+    font-weight: 500;
+    font-size: 17px;
+    width: 100%;
+    line-height: 25px;
+}
+.about-info li{
+    list-style:none;
+    text-transform: capitalize;
+    font-size: 16px;
+    margin-bottom: 11px;
+}
+.about-info li i{
+    color:rgb(16, 235, 158);
+    margin-right: 11px;
+    font-weight: bold;
+    font-size: 18px;
+}
+.about-link{
+margin-top: 16px;
+}
+.about-link a{
+    text-decoration: none;
+    text-align: center;
+    padding: 14px 40px;
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+    font-size: 18px;
+    font-weight: bold;
+    text-transform:capitalize;
+    color: rgb(35, 32, 32);
+    background-color: rgb(16, 235, 158);
+}
+.about-link a:hover{
+    background-color: blue;
+    color: white;
+}
+
+.about-img img{
+    width: 600px;
+    height: 75vh;
+    box-shadow: -15px -15px 1px rgb(184, 184, 235,0.2);
+}
+/****************** end About Section ********************/
+
+/****************** Start doctor Section ********************/
+.doctor-section{
+    width: 100%;
+    height: 90vh;
+    margin-top: 51px;
+}
+.swiper {
+    width: 85%;
+    height: 80%;
+  }
+
+  .swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 21px;
+    background-color: rgb(208, 246, 246);
+  }
+  .box{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    padding: 0 41px;
+  }
+  .box h1{
+    text-transform: capitalize;
+    word-spacing: 1px;
+    letter-spacing: 2px;
+  }
+  .box h4{
+    text-transform: capitalize;
+    font-weight: 500;
+  }
+  .box .links{
+    width: 100%;
+    display: flex;
+    justify-content:space-around;
+    align-items: center;
+    margin-top: 21px;
+  }
+  .box .links a{
+    text-decoration: none;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    /* background-color: bisque; */
+  }
+  .box .links a i{
+    font-size: 40px;
+    color:black;
+  }
+  .swiper-slide img {
+    display: block;
+    width: 100%;
+    height: 60%;
+    object-fit: cover;
+  }
+
+/****************** end doctor Section ********************/
+
+
+
+
+
+
+
+
+/************************ Footer Section **************************/
+footer{
+    width: 100%;
+    height: 55vh;
+    display: flex;
+    flex-direction: column;
+    /* justify-content:space-around; */
+    align-items: center;
+    background-color: rgb(6, 6, 32);
+    color: white;
+    padding: 0px 101px;
+    box-sizing: border-box;
+}
+.big-footer{
+    width: 100%;
+    height: 50%;
+    display: flex;
+    justify-content:space-around;
+    align-items: start;
+    margin-top: 51px;
+}
+.footer-links{
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+    gap: 11px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.footer-links h2{
+    text-transform: capitalize;
+    letter-spacing: 1px;
+    margin-bottom: 11px;
+}
+.footer-links:first-child{
+    width: 20%;
+}
+.footer-links p{
+    color: rgb(187, 174, 174);
+    line-height: 21px;
+}
+.footer-links a{
+    text-transform:uppercase;
+    text-decoration: none;
+    color: rgb(187, 174, 174);
+}
+.follow{
+    margin: 30px;
+    display: flex;
+    gap: 100px;
+    font-size:30px;
+}
+.follow a{
+    text-decoration: none;
+}
+.follow a i{
+    font-size: 40px;
+}
+.follow a i:hover{
+    color: white;
+}
+footer p{
+    font-size: 18px;
+}
+/**************************** end of footer ************************************************* */
+
+
+
+
+
+
+
+
+
+
+/****************** Start contact Section ********************/
+.contact-section{
+    width: 100%;
+    height: 105vh;
+    margin-top: 51px;
+}
+.img-form{
+    width: 100%;
+    height: 75%;
+    display: flex;
+    justify-content:center;
+    align-items:start;
+    gap: 50px;
+    padding: 0 50px;
+    margin-top: 21px;
+}
+.contact-img{
+    width: 100%;
+    height: 88%;
+}
+.img-form img{
+    width: 100%;
+    height: 100%;
+}
+.img-form h2{
+    margin-top: 21px;
+    text-align: center;
+    text-transform: capitalize;
+}
+form{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+    gap: 11px;
+}
+.fg{
+    width:60%;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+    gap: 10px;
+    margin-bottom: 11px;
+}
+.fg input,textarea{
+    width: 100%;
+    padding: 16px 10px;
+    outline-color: orange;
+    outline-offset: 3px;
+    border: none;
+    /* border-bottom: 1px solid #000; */
+    border-radius: 11px;
+    box-shadow: 0px 1px 5px gray;
+}
+textarea{
+    resize: none;
+    height: 10vh;
+}
+.fg label{
+    font-size: 20px;
+    font-weight: 500;
+    text-transform: capitalize;
+}
+.form-btn{
+        text-decoration: none;
+        text-align: center;
+        padding: 14px 40px;
+        cursor: pointer;
+        border: none;
+        border-radius: 5px;
+        font-size: 18px;
+        font-weight: bold;
+        text-transform:capitalize;
+        color: rgb(35, 32, 32);
+        background-color: rgb(16, 235, 158);
+    }
+    .form-btn:hover{
+        background-color: blue;
+        color: white;
+    }
+    ::placeholder{
+        font-size: 16px;
+        font-weight: 500;
+    }
+/****************** Start contact Section ********************/
+
+
+
+/******************* start Insurance section ****************/
+.insurance-section{
+    width: 100%;
+    height: 230vh;
+    margin-top: 21px;
+}
+.s-heading{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 11px;
+    margin-bottom:61px;
+}
+.s-line{
+    width: 35%;
+    height: 5px;
+    background-image: linear-gradient(to left,rgb(149, 240, 225),rgb(238, 177, 106),rgb(247, 154, 228));
+    position: relative;
+}
+.s-line::after{
+    content: '';
+    position: absolute;
+    top:-10px;
+    left:-20px;
+    bottom: 0;
+    width: 25px;
+    height: 25px;
+    background-image: linear-gradient(to right,rgb(149, 240, 225),rgb(238, 177, 106),rgb(247, 154, 228));
+   
+}
+.insurance{
+    width: 85%;
+    height:90%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    margin: auto;
+    gap: 50px;
+}
+.ins1{
+    width: 45%;
+    height: 65vh;
+    border: 2px solid black;
+    display: flex;
+    flex-direction: column;
+    justify-content:start;
+    align-items:center;
+    gap: 21px;
+    text-align: center;
+    border-radius: 16px;
+    transition: all 0.5s ease;   
+}
+.ins1:hover{
+    cursor: pointer;
+    transform: scale(1.1);
+    background-image:linear-gradient(to left,rgb(250, 170, 22,0.3),rgb(16, 16, 242,0.2));
+    /* color: white; */
+}
+.ins1 img{
+    width: 100%;
+    height: 200px;
+    border-radius: 16px 16px 0 0;
+}
+.ins1 p{
+    text-align: center;
+    width:90%;
+    font-weight:500;
+    font-size: 20px;
+}
+.ins1 a{
+    text-transform: capitalize;
+    text-decoration: none;
+    padding: 14px 31px;
+    border-radius: 11px;
+    color: white;
+    font-weight:bold;
+    font-size: 20px;
+    background: #16a085;
+}
+.ins1 a:hover{
+    background:brown;
+    color: white;
+}
+
+/********************End of insurance section ***************/
+
+
+/************************ Scroller  section **********************/
+.scroller{
+    width: 60px;
+    height: 60px;
+    border-radius: 35%;
+    font-size: 40px;
+    color:rgb(35, 33, 33);
+    background-image:linear-gradient(to left,rgb(12, 12, 149,0.6),rgb(165, 42, 42,0.6));
+    text-align: center;
+    position: fixed;
+    bottom: 50px;
+    right: 30px;
+    cursor: pointer;
+}
+.scroller::after{
+    position: absolute;
+    content: "";
+    width: 50px;
+    height:50px;
+    border-radius: 41%;
+    background-color: rgb(180, 240, 236);
+    z-index: -999;
+    top:5px;
+    bottom:0;
+    right: 0;
+    left:5px;
+    opacity: 0.8;
+    animation: ayush 3s linear infinite;
+    transition: all 0.3s ease;
+}
+@keyframes ayush{
+    0%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+}
+/***************************** End scroll btn *********************/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Responsive code */
+@media(max-width:1100px){
+    .heading{
+        margin: 20px 0px;
+    }
+    .line{
+        width: 20%;
+    }
+    .main-container{
+        width: 90%;
+    }
+    .info h1{
+        width: 80%;
+    }
+    .info p{
+        width: 90%;
+    }
+    .main-img img{
+        width: 400px; 
+    }
+    .info a{
+        padding: 14px 30px;
+    }
+    .about-info p{
+        width: 110%;
+    }
+    .about-info{
+        margin-left: 70px;
+    }
+    .services{
+        height:130vh;
+    }
+    .service1{
+        width: 33%;
+        height: 55vh;
+    }
+    .s-line{
+        width: 45%;
+    }
+    .insurance-section{
+        margin-top: 250px;
+    }
+    .s-line{
+        width: 40%;
+    }
+    .insurance{
+        grid-template-rows: repeat(3,1fr);
+        grid-template-columns: repeat(2,1fr);
+    }
+}
+@media(max-width:1200px){
+    nav{
+        flex-direction: column;
+        height: auto;
+    }
+    .menu{
+        margin-top: 40px;
+        display: none;
+    }
+    .user-details{
+        display: none;
+        margin: 40px 0px;
+    }
+    .logo-ham{
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        padding: 0 100px;
+        align-items: center;
+    }
+    .ham{
+        display: block;
+    }
+    .line{
+        width: 22%;
+    }
+    
+}
+@media(max-width:950px){
+     .info h1{
+        width: 80%;
+    }
+    .info p{
+        width: 90%;
+    }
+    .info a{
+        padding: 14px 25px;
+    }
+    .main-img img{
+        width: 350px; 
+    }
+    .line{
+        width: 25%;
+    }
+}
+@media(max-width:880px){
+    main{
+        height: 120vh;
+    }
+    .main-container{
+        flex-direction: column-reverse;
+        height:100%;
+    }
+    .heading{
+        margin-top: 50px;
+        margin-bottom: 100px;
+    }
+    .line{
+        width: 30%;
+    }
+    .info{
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        margin-top: 20px;
+    }
+    .info h1{
+        width: 80%;
+    }
+    .info p{
+        width: 90%;
+    }
+    .info a{
+        padding: 14px 20px;
+    }
+    .main-img img{
+        width: 600px;
+        height: 65vh;
+    }
+    .about-section{
+        height: 125vh;
+    }
+     .about-container{
+        flex-direction: column;
+        height: 100%;
+    }
+    .about-info{
+        justify-content: center;
+        align-items: start;
+        text-align: left;
+        margin-top: 20px;
+    }
+    .about-info ul{
+        text-align: left;
+    }
+    .about-info h1{
+        width: 100%;
+    }
+    .about-info p{
+        width: 80%;
+    }
+    .about-info a{
+        padding: 14px 20px;
+    }
+    .services-section{
+        margin-top: 220px;
+    height: 180vh;
+    }
+    .services{
+        gap: 20px;
+        height: 160vh;
+    }
+    .service1{
+        width: 45%;
+        height: 50vh;
+    }
+
+}
+
+@media(max-width:720px){
+    .logo-ham{
+        padding: 0px  50px;
+    }
+    .main-img img{
+        width: 550px;
+        box-shadow: none;
+    }
+    .about-info{
+        margin-right: 40px;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+    .about-info p{
+        width: 100%;
+    }
+    .line{
+        width: 35%;
+    }
+    .service1{
+        width: 50%;
+        height: 51vh;
+    }
+    .s-line{
+        width: 60%;
+    }
+}
+@media(max-width:600px){
+    .menu a{
+        display: block;
+        margin-bottom: 15px;
+        text-align: center;
+    }
+    .main-img img{
+        width: 450px;
+    }
+    .line{
+        width: 40%;
+    }
+    .service1 img{
+        width: 90%;
+        height: 18vh;
+    }
+    .service1 h1{
+        font-size: 14px;
+    }
+    .service1 p{
+        font-size: 14px;
+    } 
+    .service1 a{
+        font-size: 14px;
+    }
+    .services-btn a{
+        padding: 12px 25px;
+    }
+}
+@media(max-width:480px){
+     .main-container{
+        height: 110vh;  
+    }
+    .info h1{
+      font-size:32px;
+    }
+    .info a{
+        padding: 15px 10px;
+    }
+    .main-img img{
+        height: 50vh;
+        width: 300px;
+    }
+     .about-container{
+        height: 110vh;  
+    }
+    .about-info h1{
+      font-size:32px;
+      width: 110%;
+    }
+    .about-info p{
+        width: 130%;
+    }
+    .about-info a{
+        padding: 15px 10px;
+    }
+    .heading{
+        margin-top: 0;
+    }
+    .line{
+        width: 50%;
+    }
+    .services-section{
+        margin-top: 180px;
+    }
+    .services{
+        height: 310vh;
+        gap: 40px;
+        justify-content:start;
+        align-items: center;
+    }
+    .service1{
+        width: 90%;
+        height: 45vh;
+    }
+    .services-btn{
+        margin-top: 0;
+    }
+    .s-line{
+        width: 80%;
+    }
+}
+@media(max-width:390px){
+    .logo-ham{
+        padding: 0px 10px;
+    }
+    .user-details a{
+        display: block;
+        text-align: center;
+        margin-bottom: 12px;
+    }
+    .about-info h1{
+      font-size:30px;
+      width: 120%;
+    }
+    .about-info p{
+        width: 140%;
+    }
+}
+
+.dg{
+    display: flex;
+    gap: 11px;
+}
+.dg input{
+    height: 2vh;
+}
+.dgp{
+    display: flex;
+    gap: 25px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

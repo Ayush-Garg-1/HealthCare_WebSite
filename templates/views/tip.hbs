@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <title>Wellness event</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1" />
+  <!-- Link Swiper's CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="tip.css">
+</head>
+<body>
+   <!-- Here  Navebar is started -->
+   {{>navbar}}
+ <!-- Here  Navebar is end-->
+
+ <!-- Swiper -->
+  <div class="swiper mySwiper">
+    <div class="swiper-wrapper">
+      <div class="swiper-slide"><img src="./imgas/imgas/yoga/yoga-for-beginners.jpg" alt=""> </div>
+      <div class="swiper-slide"><img src="./imgas/imgas/tai chi/GD-Tai-chi-May-2022-Roswitha-Chesher-LR-20.jpg" alt="" srcset=""> </div>
+      <div class="swiper-slide"><img src="./imgas/imgas/karate/63bd12aaeea0f00a85566eda_Banner PU Karate.jpg" alt="" srcset=""> </div>
+      <div class="swiper-slide"><img src="./imgas/imgas/mindfullness/what-mindfulness-definition.jpg" alt="" srcset=""> </div>
+      <div class="swiper-slide"><img src="./imgas/imgas/dance/4688722-GettyImages-950806258-06e1e050ab184f3694fd96017c9a42ee.jpg" alt="" srcset=""> </div>
+    </div>
+    <div class="swiper-pagination"></div>
+  </div>
+   <!-- Swiper end-->
+
+  <!-- yoga img section -->
+  <section class="yoga-imgs">
+    <div class="ig">
+      <a href="#yoga"><img src="./imgas/imgas/yoga/shutterstock_324427688-1.jpg" alt="yogaImg"></a>
+      <h1>yoga</h1>
+    </div>
+    <div class="ig">
+      <a href="#tc"><img src="./imgas/imgas/tai chi/c5fc712bafb94ed9b17397cf9e256393.jpg" alt="yogaImg"></a>
+      <h1>
+        Tai Chi</h1>
+    </div>
+    <div class="ig">
+      <a href="#k"><img src="./imgas/imgas/karate/karate-kick-white-pex.jpg" alt="yogaImg"></a>
+      <h1>Karate</h1>
+    </div>
+    <div class="ig">
+      <a href="#mf"mf><img src="./imgas/imgas/mindfullness/tile-stress-mindfulness-meditation_tcm7-264379.jpg" alt="yogaImg"></a>
+      <h1>Mindfulness</h1>
+
+    </div>
+    <div class="ig">
+      <a href="#df"><img src="./imgas/imgas/dance/istockphoto-1474628344-612x612.jpg" alt="yogaImg"></a>
+      <h1>Dance Fitness</h1>
+    </div> 
+  </section>
+  <!-- yoga img section -->
+    <!-- yoga section -->
+    <section class="yogas">
+      <div class="yogas-box">
+        <div class="card mb-3" style="max-width: 90%;" id="yoga">
+          <div class="row g-0">
+            <div class="col-md-6">
+              <img src="./imgas/imgas/yoga/young-man-practicing-upward-facing-dog-pose-1133155626-06564fa2cd1d474aa4a43241555c32be.jpg" class="img-fluid rounded-start" alt="...">
+            </div>
+            <div class="col-md-6">
+              <div class="card-body mycard">
+                <h2 class="card-title" style="font-weight: bold;">Yoga</h2>
+                <p class="card-text">A mind and body practice that combines physical posture, breathing techniques and meditation. We have brought masters in this field, who will help you through various levels of yoga and achieve a balance between your mind and body at your own pace and become more flexible, manage stress better.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="card mb-3" style="max-width: 90%;" id="tc">
+          <div class="row g-0">
+            <div class="col-md-6">
+              <img src="./imgas/imgas/tai chi/GD-Tai-chi-May-2022-Roswitha-Chesher-LR-20.jpg" class="img-fluid rounded-start" alt="...">
+            </div>
+            <div class="col-md-6">
+              <div class="card-body mycard">
+                <h2 class="card-title" style="font-weight: bold;">Tai Chi</h2>
+                <p class="card-text">An ancient Chinese meditative exercise, Tai Chi emphasises on slow, graceful movements that help stretch, breathe and find balance. It is also referred to as an internal martial art. Our coach will help you calm physically and emotionally and at the same time reduce stress and anxiety.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="card mb-3" style="max-width: 90%;" id="df" >
+          <div class="row g-0">
+            <div class="col-md-6">
+              <img src="./imgas/imgas/dance/4688722-GettyImages-950806258-06e1e050ab184f3694fd96017c9a42ee.jpg" class="img-fluid rounded-start" alt="...">
+            </div>
+            <div class="col-md-6">
+              <div class="card-body mycard">
+                <h2 class="card-title" style="font-weight: bold;">Dance Fitness</h2>
+                <p class="card-text">A whole-body workout in a fun and engaging way, Dance Fitness also improves cardiovascular health and improves flexibility. Our dance fitness coaches will not only guide in managing weight but also focussing on overall health development. 30 mins of Dance Fitness can help you burn 130 to 250 calories.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      <div class="card mb-3" style="max-width: 90%;" id="k">
+        <div class="row g-0">
+          <div class="col-md-6">
+            <img src="./imgas/imgas/karate/63bd12aaeea0f00a85566eda_Banner PU Karate.jpg" class="img-fluid rounded-start" alt="...">
+          </div>
+          <div class="col-md-6">
+            <div class="card-body mycard">
+              <h2 class="card-title" style="font-weight: bold;">Karate</h2>
+              <p class="card-text">A full body movement that helps you understand the power of mind over body. Especially designed for kids, it helps them to focus better, build confidence. It instils discipline and determination. Our karate coaches will help children learn self-defense and, at the same time, be respectful towards others.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="card mb-3" style="max-width: 90%;" id="mf">
+        <div class="row g-0">
+          <div class="col-md-6">
+            <img src="./imgas/imgas/mindfullness/what-mindfulness-definition.jpg" class="img-fluid rounded-start" alt="...">
+          </div>
+          <div class="col-md-6">
+            <div class="card-body mycard">
+              <h2 class="card-title" style="font-weight: bold;">Mindfulness</h2>
+              <p class="card-text">It is the ability to be fully present at the moment and to respond, rather than react. Our mindfulness coach has been an active champion of mindfulness in training corporates, academic institutions, and industry associations for more than six years.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    </section>
+    <!-- yoga section -->
+
+
+
+  <!-- footer section -->
+  {{>footer}}
+  <!-- End of footer -->
+
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
+  <!-- Swiper JS -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+  <!-- Initialize Swiper -->
+  <script>
+    var swiper = new Swiper(".mySwiper", {
+      slidesPerView: 1,
+      spaceBetween: 0,
+      autoplay:{
+        delay:2500
+    },
+      pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+      },
+    });
+  </script>
+</body>
+
+</html>
